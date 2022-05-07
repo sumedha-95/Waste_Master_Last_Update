@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditBin">
+
+    <TextView
+        android:id="@+id/editBin"
+        android:layout_width="236dp"
+        android:layout_height="39dp"
+        android:hint="@string/editBin"
+        android:textAlignment="center"
+        android:textColor="#272222"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="429dp"
+        android:layout_height="224dp"
+        android:layout_marginTop="500dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home" />
+
+    <EditText
+        android:id="@+id/editbinClening"
+        android:layout_width="368dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:hint="@string/editbinClening"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.577" />
+
+    <EditText
+        android:id="@+id/editBinText"
+        android:layout_width="368dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:hint="@string/editBinText"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.233" />
+
+    <EditText
+        android:id="@+id/editBinlord"
+        android:layout_width="368dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:hint="@string/editBinlord"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <EditText
+        android:id="@+id/editBinlocation"
+        android:layout_width="368dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:hint="@string/editBinlocation"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.68" />
+
+    <Button
+        android:id="@+id/editBin1"
+        android:layout_width="393dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#1ee605"
+        android:hint="@string/editBin1"
+        android:text="@string/editBin1"
+        app:layout_constraintBottom_toTopOf="@+id/deletebin1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editBinlocation" />
+
+    <Button
+        android:id="@+id/deletebin1"
+        android:layout_width="387dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="84dp"
+        android:backgroundTint="#1ee605"
+        android:hint="@string/deletebin1"
+        android:text="@string/deletebin1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/searchcity"
+        android:layout_width="393dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#1ee605"
+        android:hint="@string/search"
+        android:text="@string/search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.351" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

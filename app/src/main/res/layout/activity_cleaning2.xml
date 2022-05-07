@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CleaningActivity2">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="466dp"
+        android:layout_height="326dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/activity2main" />
+
+    <Button
+        android:id="@+id/btact_id4"
+        android:layout_width="357dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="52dp"
+        android:background="@color/teal_200"
+        android:backgroundTint="#1ee605"
+        android:hint="@string/btact_id4"
+        android:text="@string/btact_id4"
+        android:textColor="#ffffff"
+        android:textColorHighlight="#5EFF08"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#FDFCFC"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/binid11"
+        android:layout_width="357dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="284dp"
+        android:background="@color/teal_200"
+        android:backgroundTint="#1ee605"
+        android:hint="@string/btact_id1"
+        android:text="@string/btact_id1"
+        android:textColor="#ffffff"
+        android:textColorHighlight="#5EFF08"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#FDFCFC"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btact_id2"
+        android:layout_width="357dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="208dp"
+        android:background="@color/teal_200"
+        android:backgroundTint="#1ee605"
+        android:hint="@string/btact_id2"
+        android:text="@string/btact_id2"
+        android:textColor="#ffffff"
+        android:textColorHighlight="#5EFF08"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#FDFCFC"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btact_id3"
+        android:layout_width="357dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="132dp"
+        android:background="@color/teal_200"
+        android:backgroundTint="#1ee605"
+        android:hint="@string/btact_id3"
+        android:text="@string/btact_id3"
+        android:textColor="#ffffff"
+        android:textColorHighlight="#5EFF08"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#FDFCFC"
+        tools:ignore="TextContrastCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

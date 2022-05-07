@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateBin">
+
+    <TextView
+        android:id="@+id/editBin"
+        android:layout_width="236dp"
+        android:layout_height="39dp"
+        android:hint="@string/bin_idcreate"
+        android:textAlignment="center"
+        android:textColor="#272222"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="108dp"
+        android:layout_height="136dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.339"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.161"
+        app:srcCompat="@drawable/bin1" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="108dp"
+        android:layout_height="168dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.227"
+        app:srcCompat="@drawable/bin2" />
+
+
+    <EditText
+        android:id="@+id/tx_name"
+        android:layout_width="368dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="74dp"
+        android:ems="10"
+        android:hint="@string/tx_name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.554" />
+
+    <EditText
+        android:id="@+id/tx2_name"
+        android:layout_width="368dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="@string/tx2_name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tx_name" />
+
+    <EditText
+        android:id="@+id/tx3_name"
+        android:layout_width="368dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="@string/tx3_name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tx2_name" />
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="368dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/location"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tx3_name" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="429dp"
+        android:layout_height="224dp"
+        android:layout_marginTop="224dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@drawable/home" />
+
+    <Button
+        android:id="@+id/editBinbutton"
+        android:layout_width="387dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#1ee605"
+        android:hint="@string/createbin"
+        android:text="@string/createbin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location" />
+
+    <Button
+        android:id="@+id/deleteBin"
+        android:layout_width="387dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#1ee605"
+        android:hint="@string/btn_select"
+        android:text="@string/btn_select"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editBinbutton"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

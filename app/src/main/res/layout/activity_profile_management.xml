@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="20dp"
     android:orientation="vertical"
     tools:context=".ProfileManagement">
 
@@ -61,25 +62,37 @@
             android:layout_height="wrap_content"
             android:checked="true"
             android:hint="@string/radioButton"
+            android:minHeight="48dp"
             android:text="@string/radioButton" />
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:minHeight="48dp"
             android:text="@string/radioButton2" />
     </RadioGroup>
 
     <Button
         android:id="@+id/btnAdd"
         android:layout_width="match_parent"
+        android:backgroundTint="#1ee605"
+        android:textColor="#ffffff"
         android:layout_height="wrap_content"
         android:text="@string/btnAdd" />
 
     <Button
         android:id="@+id/btnUpdateProfile"
         android:layout_width="match_parent"
+        android:backgroundTint="#1ee605"
+        android:textColor="#ffffff"
         android:layout_height="wrap_content"
         android:text="@string/btnUpdateProfile" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/home" />
 
 </LinearLayout>

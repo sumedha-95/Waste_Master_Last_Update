@@ -61,7 +61,8 @@ public class EditBin extends AppCompatActivity {
 
                 CreateDB createDB = new CreateDB(getApplicationContext());
 
-                Boolean status = createDB.updateInfo(city.getText().toString(),lordtype.getText().toString(),cleaningperoid.getText().toString(),location.getText().toString());
+                Boolean status = createDB.updateInfo(city.getText().toString(),lordtype.getText().toString(),
+                        cleaningperoid.getText().toString(),location.getText().toString());
                 if (status){
                     Toast.makeText(EditBin.this, "Bin Updated", Toast.LENGTH_SHORT).show();
                 }
@@ -79,7 +80,7 @@ public class EditBin extends AppCompatActivity {
                 CreateDB createDB = new CreateDB(getApplicationContext());
                 createDB.deleteInfo(city.getText().toString());
 
-                Toast.makeText(EditBin.this, "User Deleted", Toast.LENGTH_SHORT).show();
+                Toast.makeText(EditBin.this, "Bin Deleted", Toast.LENGTH_SHORT).show();
 
                 city.setText(null);
                 lordtype.setText(null);

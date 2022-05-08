@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="20dp"
     android:orientation="vertical"
     tools:context=".EditProfile">
 
@@ -29,6 +30,8 @@
         android:id="@+id/btnSearch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="#1ee605"
+        android:textColor="#ffffff"
         android:hint="@string/btnSearch"
         android:text="@string/btnSearch" />
 
@@ -66,12 +69,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/radioButton3"
+            android:minHeight="48dp"
             android:text="@string/radioButton3" />
 
         <RadioButton
             android:id="@+id/radioButton4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:minHeight="48dp"
             android:text="@string/radioButton4" />
     </RadioGroup>
 
@@ -79,11 +84,21 @@
         android:id="@+id/btnEditEP"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="#1ee605"
+        android:textColor="#ffffff"
         android:text="@string/btnEditEP" />
 
     <Button
         android:id="@+id/btnDeleteEP"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="#1ee605"
+        android:textColor="#ffffff"
         android:text="@string/btnDeleteEP" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/home" />
 </LinearLayout>

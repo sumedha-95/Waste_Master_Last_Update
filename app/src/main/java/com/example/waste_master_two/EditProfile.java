@@ -38,17 +38,15 @@ public class EditProfile extends AppCompatActivity {
         search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 DBHandler dbHandler = new DBHandler(getApplicationContext());
                 List user = dbHandler.readAllInfo(username.getText().toString());
-
                 if (user.isEmpty()){
                     Toast.makeText(EditProfile.this, "No User", Toast.LENGTH_SHORT).show();
                     username.setText(null);
                 }
                 else {
-
-                    Toast.makeText(EditProfile.this, "User Found! User: "+user.get(0).toString(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(EditProfile.this, "User Found! User: "+user.get(0).toString(),
+                            Toast.LENGTH_SHORT).show();
                     username.setText(user.get(0).toString());
                     dob.setText(user.get(1).toString());
                     password.setText(user.get(2).toString());
@@ -58,10 +56,7 @@ public class EditProfile extends AppCompatActivity {
                     else {
                         female.setChecked(true);
                     }
-
-
                 }
-
             }
         });
 
@@ -77,7 +72,8 @@ public class EditProfile extends AppCompatActivity {
                 }
                 DBHandler dbHandler = new DBHandler(getApplicationContext());
 
-                Boolean status = dbHandler.updateInfo(username.getText().toString(),dob.getText().toString(),password.getText().toString(),gender);
+                Boolean status = dbHandler.updateInfo(username.getText().toString(),
+                        dob.getText().toString(),password.getText().toString(),gender);
                 if (status){
                     Toast.makeText(EditProfile.this, "User Updated", Toast.LENGTH_SHORT).show();
                 }

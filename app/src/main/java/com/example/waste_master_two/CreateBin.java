@@ -34,8 +34,9 @@ public class CreateBin extends AppCompatActivity {
             public void onClick(View view) {
 
                 CreateDB createDB  = new CreateDB(getApplicationContext());
-                long newID = createDB.addInfo(city.getText().toString(),lordtype.getText().toString(),cleaningperoid.getText().toString(),location.getText().toString());
-                Toast.makeText(CreateBin.this, "Bin Added. ", Toast.LENGTH_SHORT).show();
+                long newID = createDB.addInfo(city.getText().toString(),lordtype.getText().toString(),
+                        cleaningperoid.getText().toString(),location.getText().toString());
+                Toast.makeText(CreateBin.this, "Successfully Add Bin. ", Toast.LENGTH_SHORT).show();
 
                 Intent i = new Intent(getApplicationContext(),EditBin.class);
                 startActivity(i);

@@ -9,14 +9,14 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="406dp"
-        android:layout_height="234dp"
+        android:layout_width="393dp"
+        android:layout_height="152dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.111"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.012"
         app:srcCompat="@drawable/home" />
 
     <TextView
@@ -31,16 +31,48 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.405"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.337" />
+        app:layout_constraintVertical_bias="0.24" />
+
+    <Button
+        android:id="@+id/Manage_Ga"
+        android:layout_width="357dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="200dp"
+        android:background="@color/teal_200"
+        android:backgroundTint="#1ee605"
+        android:hint="@string/Manage_Ga"
+        android:text="@string/Manage_Ga"
+        android:textColor="#ffffff"
+        android:textColorHighlight="#5EFF08"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#FDFCFC"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="412dp"
+        android:layout_height="245dp"
+        android:layout_marginTop="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.924"
+        app:srcCompat="@drawable/maindown" />
 
     <Button
         android:id="@+id/bt_id1"
         android:layout_width="357dp"
         android:layout_height="59dp"
-        android:layout_marginBottom="316dp"
+        android:layout_marginBottom="364dp"
         android:background="@color/teal_200"
         android:backgroundTint="#1ee605"
         android:hint="@string/bt_id1"
@@ -50,6 +82,7 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
         app:layout_constraintStart_toStartOf="parent"
         app:rippleColor="#FDFCFC"
         tools:ignore="TextContrastCheck" />
@@ -68,40 +101,29 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bt_id1"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.376"
         app:rippleColor="#FDFCFC"
         tools:ignore="TextContrastCheck" />
 
     <Button
-        android:id="@+id/Manage_Ga"
+        android:id="@+id/routereport"
         android:layout_width="357dp"
         android:layout_height="59dp"
-        android:layout_marginBottom="140dp"
+        android:layout_marginBottom="116dp"
         android:background="@color/teal_200"
         android:backgroundTint="#1ee605"
-        android:hint="@string/Manage_Ga"
-        android:text="@string/Manage_Ga"
+        android:hint="@string/routereport"
+        android:text="@string/routereport"
         android:textColor="#ffffff"
         android:textColorHighlight="#5EFF08"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
         app:layout_constraintStart_toStartOf="parent"
         app:rippleColor="#FDFCFC"
         tools:ignore="TextContrastCheck" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="412dp"
-        android:layout_height="245dp"
-        android:layout_marginTop="400dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/maindown" />
 </androidx.constraintlayout.widget.ConstraintLayout>

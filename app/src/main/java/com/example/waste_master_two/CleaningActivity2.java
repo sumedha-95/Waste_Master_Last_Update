@@ -21,13 +21,6 @@ public class CleaningActivity2 extends AppCompatActivity {
         btn3 = findViewById(R.id.btact_id3);
         btn4 = findViewById(R.id.btact_id4);
 
-        btn3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(),ProfileManagement.class);
-                startActivity(i);
-            }
-        });
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

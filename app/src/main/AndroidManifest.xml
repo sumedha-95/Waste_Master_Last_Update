@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Waste_MasterTwo">
         <activity
+            android:name=".RouteReport"
+            android:exported="false" />
+        <activity
             android:name=".ManageGarbage"
             android:exported="false" />
         <activity

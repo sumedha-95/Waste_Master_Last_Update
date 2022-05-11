@@ -53,8 +53,9 @@ public class ProfileManagement extends AppCompatActivity {
                 }
 
                 DBHandler dbHandler = new DBHandler(getApplicationContext());
-                long newID = dbHandler.addInfo(username.getText().toString(),dob.getText().toString(),password.getText().toString(),gender);
-                Toast.makeText(ProfileManagement.this, "User Added. User ID: "+ newID, Toast.LENGTH_SHORT).show();
+                long newID = dbHandler.addInfo(username.getText().toString(),
+                        dob.getText().toString(),password.getText().toString(),gender);
+                Toast.makeText(ProfileManagement.this, "Route Added. User ID: "+ newID, Toast.LENGTH_SHORT).show();
 
                 Intent i = new Intent(getApplicationContext(),EditProfile.class);
                 startActivity(i);

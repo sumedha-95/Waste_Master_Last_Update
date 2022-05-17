@@ -63,4 +63,5 @@
     <string name="edittextlocation">Bin Count</string>
     <string name="report">Save and Print</string>
     <string name="routereport">Route Report</string>
+    <string name="buttonPrint">Print</string>
 </resources>

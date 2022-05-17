@@ -24,8 +24,8 @@
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="429dp"
-        android:layout_height="224dp"
+        android:layout_width="416dp"
+        android:layout_height="230dp"
         android:layout_marginTop="500dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -42,24 +42,24 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.577" />
+        app:layout_constraintVertical_bias="0.485" />
 
     <EditText
         android:id="@+id/editBinText"
-        android:layout_width="368dp"
-        android:layout_height="59dp"
+        android:layout_width="223dp"
+        android:layout_height="56dp"
         android:ems="10"
         android:hint="@string/editBinText"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.233" />
+        app:layout_constraintVertical_bias="0.234" />
 
     <EditText
         android:id="@+id/editBinlord"
@@ -70,10 +70,10 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.476" />
+        app:layout_constraintVertical_bias="0.373" />
 
     <EditText
         android:id="@+id/editBinlocation"
@@ -84,10 +84,10 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.68" />
+        app:layout_constraintVertical_bias="0.601" />
 
     <Button
         android:id="@+id/editBin1"
@@ -100,33 +100,34 @@
         app:layout_constraintBottom_toTopOf="@+id/deletebin1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editBinlocation" />
+        app:layout_constraintTop_toBottomOf="@+id/editBinlocation"
+        app:layout_constraintVertical_bias="0.276" />
 
     <Button
         android:id="@+id/deletebin1"
-        android:layout_width="387dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="84dp"
+        android:layout_width="390dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="124dp"
         android:backgroundTint="#1ee605"
         android:hint="@string/deletebin1"
         android:text="@string/deletebin1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.625"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/searchcity"
-        android:layout_width="393dp"
-        android:layout_height="56dp"
+        android:layout_width="128dp"
+        android:layout_height="54dp"
         android:backgroundTint="#1ee605"
         android:hint="@string/search"
         android:text="@string/search"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.89"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.351" />
+        app:layout_constraintVertical_bias="0.233" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.waste_master_two">
 
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,10 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Waste_MasterTwo">
         <activity
-            android:name=".TestActivity"
+            android:name=".RouteReportGenarate"
             android:exported="false" />
         <activity
-            android:name=".RouteReport"
+            android:name=".TestActivity"
             android:exported="false" />
         <activity
             android:name=".ManageGarbage"

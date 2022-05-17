@@ -58,7 +58,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/textViewview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/textView3"

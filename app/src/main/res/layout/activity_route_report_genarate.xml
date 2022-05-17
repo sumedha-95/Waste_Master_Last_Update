@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textView31"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RouteReportGenarate"
+    tools:ignore="MissingClass">
+
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="match_parent"
+        android:layout_height="248dp"
+        app:srcCompat="@drawable/truck" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="446dp">
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="345dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/editTextName"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="342dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/editTextPhone"
+            android:inputType="phone"
+            android:minHeight="48dp"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="136dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="68dp"
+            app:layout_constraintEnd_toStartOf="@+id/editTextQty"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPhone"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/editTextQty"
+            android:layout_width="128dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="44dp"
+            android:ems="10"
+            android:hint="@string/editTextQty"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.837"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPhone"
+            app:layout_constraintVertical_bias="0.006" />
+
+        <Button
+            android:id="@+id/btnSaveAndPrint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="136dp"
+            android:text="Save and Print"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:backgroundTint="#1ee605"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="409dp"
+            android:layout_height="195dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPhone"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/home" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

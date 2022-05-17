@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         RouteRe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent a = new Intent(getApplicationContext(),RouteReport.class);
+                Intent a = new Intent(getApplicationContext(),RouteReportGenarate.class);
                 startActivity(a);
             }
         });

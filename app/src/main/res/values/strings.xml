@@ -64,4 +64,8 @@
     <string name="report">Save and Print</string>
     <string name="routereport">Route Report</string>
     <string name="buttonPrint">Print</string>
+    <string name="editTextQty">Bin Count</string>
+    <string name="textViewview">"Report Genarate "</string>
+    <string name="editTextName">Route Name</string>
+    <string name="editTextPhone">Route Number</string>
 </resources>

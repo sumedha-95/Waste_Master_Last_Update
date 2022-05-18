@@ -16,6 +16,7 @@ import java.util.List;
 
 public class EditProfile extends AppCompatActivity {
 
+    // link with xml file
     EditText username, dob, password ;
     Button edit, delete, search;
     RadioButton male, female;
@@ -26,6 +27,7 @@ public class EditProfile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_profile);
 
+        //create link with xml
         username = findViewById(R.id.etUserNameEP);
         dob = findViewById(R.id.etDobEP);
         password = findViewById(R.id.etPasswordEP);
@@ -35,6 +37,7 @@ public class EditProfile extends AppCompatActivity {
         male = findViewById(R.id.radioButton3);
         female = findViewById(R.id.radioButton4);
 
+        //search button
         search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -60,6 +63,7 @@ public class EditProfile extends AppCompatActivity {
             }
         });
 
+        //edit button
         edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -84,6 +88,7 @@ public class EditProfile extends AppCompatActivity {
             }
         });
 
+        //delete button
         delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

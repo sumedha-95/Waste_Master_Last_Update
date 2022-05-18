@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+
+    //Button
     Button userM,RouteM,Manage_Ga,RouteRe;
 
     @Override
@@ -15,11 +17,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //link with xml
         userM = findViewById(R.id.bt_id1);
         RouteM = findViewById(R.id.binid11);
         Manage_Ga = findViewById(R.id.Manage_Ga);
         RouteRe = findViewById(R.id.routereport);
 
+        //user management button
         userM.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -28,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //route management button
         RouteM.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -36,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //manage garbage button
         Manage_Ga.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -43,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(a);
             }
         });
+
+        //route report button
         RouteRe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

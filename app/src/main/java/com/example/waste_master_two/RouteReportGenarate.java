@@ -31,6 +31,7 @@ import java.util.SplittableRandom;
 
 public class RouteReportGenarate extends AppCompatActivity {
 
+        //initialize button
         Button saveAndPrintButton,printButton;
         EditText editTextName,editTextPhone,editTextQty;
         Spinner spinner;
@@ -62,6 +63,7 @@ public class RouteReportGenarate extends AppCompatActivity {
 
         }
 
+        //connect save and print button
         private void callonClickListener() {
             saveAndPrintButton.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -73,6 +75,8 @@ public class RouteReportGenarate extends AppCompatActivity {
                     int amount = qty*itemPrice[spinner.getSelectedItemPosition()];
                     reportHelper.insert(driverName,contactNo,date.getTime(),item,qty,amount);
 
+                    Toast.makeText(RouteReportGenarate.this, "Successfully Save", Toast.LENGTH_LONG).show();
+
                     printInvoice();
 
 
@@ -81,13 +85,18 @@ public class RouteReportGenarate extends AppCompatActivity {
 
         }
 
+        //print invoice
         private void printInvoice() {
+
+            //create pdf as a report
             PdfDocument myPdfDocument = new PdfDocument();
             Paint myPaint = new Paint();
 
+            //pdf canvas
             String[] columns = {"invoiceNo","driverName","contactNo","date","item","qty","amount"};
             Cursor cursor = sqLiteDatabase.query("myTable",columns,null,null,null,null,null);
             cursor.move(cursor.getCount());
+
             //pdf document
             PdfDocument.PageInfo myPageInfo = new PdfDocument.PageInfo.Builder(1000,900,1).create();
             PdfDocument.Page myPage = myPdfDocument.startPage(myPageInfo);

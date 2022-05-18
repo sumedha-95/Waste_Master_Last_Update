@@ -23,13 +23,16 @@ public class ManageGarbage extends AppCompatActivity {
     private String plasticandPolitheenqty = "";
     private String glassandnonqty = "";
 
+    //array list
     private ArrayList<String> data = new ArrayList<String>();
     private ArrayList<String> data1 = new ArrayList<String>();
     private ArrayList<String> data2 = new ArrayList<String>();
     private ArrayList<String> data3 = new ArrayList<String>();
 
+    //layout table
     private TableLayout table;
 
+    //link with xmal
     EditText ed1;
     CheckBox ch1, ch2, ch3;
     Button b1, b2 ,btnsubmitnew1;
@@ -40,6 +43,7 @@ public class ManageGarbage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_manage_garbage);
 
+        //create connection with xml
         ch1 = findViewById(R.id.chk1);
         ch2 = findViewById(R.id.chk2);
         ch3 = findViewById(R.id.chk3);
@@ -50,7 +54,7 @@ public class ManageGarbage extends AppCompatActivity {
         b2 = findViewById(R.id.btn2);
         btnsubmitnew1 = findViewById(R.id.btnsubmitnew1);
 
-
+        //move to the create bin page
         btnsubmitnew1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,6 +63,7 @@ public class ManageGarbage extends AppCompatActivity {
             }
         });
 
+        //calculate option
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -71,6 +76,7 @@ public class ManageGarbage extends AppCompatActivity {
             }
         });
 
+        //get sumation
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -82,6 +88,7 @@ public class ManageGarbage extends AppCompatActivity {
             }
         });
 
+        //assign value
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -90,6 +97,7 @@ public class ManageGarbage extends AppCompatActivity {
         });
     }
 
+    //assign value in our array
     public void Assign() {
         if (ch1.isChecked()) {
             final TableRow row = new TableRow(this);
@@ -98,6 +106,7 @@ public class ManageGarbage extends AppCompatActivity {
             final TextView t3 = new TextView(this);
             final TextView t4 = new TextView(this);
 
+            //massage
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setTitle("Assign Garbage Bin Qty");
 

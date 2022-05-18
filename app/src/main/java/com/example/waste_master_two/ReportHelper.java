@@ -24,6 +24,7 @@ public class ReportHelper extends SQLiteOpenHelper {
     }
     public void insert(String driverName, String contactNo, long date, String item, int qty, int amount){
 
+        //connect to the database in our system
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
 

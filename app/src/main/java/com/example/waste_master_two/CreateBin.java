@@ -14,6 +14,8 @@ import com.example.waste_master_two.Database.CreateDB;
 import com.example.waste_master_two.Database.DBHandler;
 
 public class CreateBin extends AppCompatActivity {
+
+    //Create  buttons
     EditText city,lordtype,cleaningperoid,location;
     Button createbin,openmap;
 
@@ -22,6 +24,7 @@ public class CreateBin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_bin);
 
+        //create link with xml
         createbin = findViewById(R.id.editBinbutton);
         openmap = findViewById(R.id.deleteBin);
         city =findViewById(R.id.tx_name);
@@ -29,6 +32,7 @@ public class CreateBin extends AppCompatActivity {
         cleaningperoid = findViewById(R.id.tx3_name);
         location = findViewById(R.id.location);
 
+        //create bin button
         createbin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -36,6 +40,7 @@ public class CreateBin extends AppCompatActivity {
                 CreateDB createDB  = new CreateDB(getApplicationContext());
                 long newID = createDB.addInfo(city.getText().toString(),lordtype.getText().toString(),
                         cleaningperoid.getText().toString(),location.getText().toString());
+                //Toast massage
                 Toast.makeText(CreateBin.this, "Successfully Add Bin. ", Toast.LENGTH_SHORT).show();
 
                 Intent i = new Intent(getApplicationContext(),EditBin.class);
@@ -48,7 +53,7 @@ public class CreateBin extends AppCompatActivity {
             }
         });
 
-        //open map
+        //open map button
         openmap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
